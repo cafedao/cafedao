@@ -1,0 +1,130 @@
+/*
+
+Main color: #f7941f
+Dark Accent: #a25b25
+Light Accent: #fcb360
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+html, body{
+  margin:0;
+  font-family: 'Nunito', sans-serif;
+}
+a {
+  color:#000;
+}
+.center {
+  text-align:center;
+}
+.button {
+  color: black;
+  background: #fff;
+  padding:10px;
+  border-radius:100px;
+  border:#f7941f solid 3px;
+  margin:5px;
+  font-size: 1.2rem;
+  text-decoration:none;
+  transition: background .4s ease;
+}
+.button:hover {
+  background: #ffe0c2;
+}
+code {
+  font-size:1.09rem;
+}
+.section {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap: wrap;
+}
+.tile {
+  padding:20px;
+  margin:20px;
+  width:20vw;
+  align-items:center;
+}
+.up {
+  flex-direction: column;
+}
+.side {
+  display:flex;
+}
+.navlinks {
+  position: absolute;
+  right:10px;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+}
+.subnavlinks, .title {
+  font-size:1.2rem;
+  margin-right:10px;
+  line-height:3;
+  text-decoration:none;
+  font-weight: 500;
+}
+.subnavlinks:hover, .footerlink:hover {
+  color:gray;
+}
+.box {
+  background:white;
+  border: 2px solid #000;
+  box-shadow: 8px 9px #f7941f;
+  padding: 20px;
+  border-radius:10px;
+  width:80vw;
+}
+.footer {
+  min-height:30vh;
+  background:#faeee3;
+  display:flex;
+  align-items:center;
+  padding: 75px 0 75px 0;
+  width:100% !important;
+}
+.footerlink {
+  font-size:1.2rem;
+  margin-right:10px;
+  line-height:1.2;
+  text-decoration:none;
+  font-weight: 500;
+}
+.fancyicons {
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all .2s ease-in-out;
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(38deg) brightness(99%) contrast(104%);
+  cursor:pointer;
+}
+.fancyicons:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 700px) {
+  .up {
+    width:100% !important;
+    text-align: center;
+  }
+  .side {
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+  }
+  .navlinks {
+    position: unset;
+    right: unset;
+    width: 100vw;
+  }
+  .tile {
+    width:100%;
+  }
+  .mobile {
+    width:50vw;
+    height:50vw;
+  }
+}
